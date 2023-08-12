@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "./backend/server.js",
-  "scripts": {
-    "start": "node ./backend/server.js",
-    "dev": "nodemon ./backend/server.js",
-    "preinstall": "cd frontend && npm install && npm run build && rm -r node_modules"
-    
+  "scripts":{
+    "start": "cd frontend && npm install && npm run build && rm -r node_modules && cd .. && node ./backend/server.js",
+    "dev": "nodemon ./backend/server.js" 
   },
   "author": "Ashutosh Tiwari",
   "license": "GPL-3.0",
